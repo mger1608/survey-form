@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1 id="title">Registration Form</h1>
+    <p id="description">Please fill out this form with the required information</p>
+    <form id="survey-form">
+      <fieldset>
+        <label id="name-label">Name <input id="name" type="text" placeholder="Enter your name" required /></label>
+        <label id="email-label">Email <input id="email" type="email" placeholder="Enter your email" required /></label>
+        <label id="number-label">Number (optional) <input id="number" type="number" min="0" max="9" placeholder="Enter your number" /></label>
+      </fieldset>
+      <fieldset>
+        <label for="dropdown">How did you hear about us? <select id="dropdown">
+          <option value="">(select one option)</option>
+          <option value="1">Social Media</option>
+          <option value="2">Google</option>
+          <option value="3">Word of Mouth</option>
+          <option value="4">Other</option> 
+        </select>
+      <legend>Do you prefer dogs or cats?</legend>
+      <input type="radio" id="dog" name="fav_animal" value="dog">
+<label for="dog">Dogs </label>
+      <input type="radio" id="cat" name="fav_animal" value="cat">
+<label for="cat">Cats </label>
+      <legend>What type of ice cream do you like?</legend>
+      <input type="checkbox" id="vanilla" name="ice_cream_flavor" value="vanilla">
+      <label for="vanilla">Vanilla</label>
+      <input type="checkbox" id="chocolate" name="ice_cream_flavor" value="chocolate">
+      <label for="chocolate">Chocolate</label>
+      <input type="checkbox" id="mint" name="ice_cream_flavor" value="mint">
+      <label for="mint">Mint</label>
+      <input type="checkbox" id="strawberry" name="ice_cream_flavor" value="strawberry">
+      <label for="strawberry">Strawberry</label>
+
+      <label for="comments">Additional Comments:
+            <textarea id="comments" name="comments" rows="3" cols="30"></textarea>
+          </label>
+      </fieldset>
+      <input id="submit" type ="submit" value="submit"/>
+    </form>
+  </body>
+</html>
